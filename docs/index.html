@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3D</title>
+</head>
+
+<body id='body'>
+    <div class="header">
+        <div class="coordinates">
+            <div id="1"></div>
+        </div>
+        <div class="coordinates">
+            <div id="2"></div>
+        </div>
+        <div class="coordinates">
+            <div id="3"></div>
+        </div>
+        <div class="coordinates" id='div-range'>
+            <label for="range">Nivel de opacidad: </label>
+            <input type='range' class="coordinates" id='range' min='10' max='100'>
+            <font id='transparencia'></font>
+        </div>
+    </div>
+    <section class="container">
+        <div id="cube">
+            <figure class="lateral back"></figure>
+            <figure class="lateral left"></figure>
+            <figure class="lateral bottom"></figure>
+            <figure class="lateral front"></figure>
+            <figure class="lateral right"></figure>
+            <figure class="lateral top"></figure>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

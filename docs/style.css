@@ -1,0 +1,137 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+.coordinates
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    border: 1px solid;
+    height: fit-content;
+    min-height: 60px;
+    min-width: 100px;
+    width: fit-content;
+    width: -moz-fit-content;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.coordinates div{
+    margin: auto;
+}
+.header{
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#div-range{
+    display: flex;  
+    flex-wrap: wrap;
+    align-self: stretch;
+}
+#cube
+{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    user-select: none;
+    -webkit-user-select: none;
+    transform: rotateX(0deg) rotateY(0deg);
+}
+.container
+{
+    width: 150px;
+    height: 150px;
+    margin: 350px auto 100px;
+    position: relative;
+    perspective: 400px;
+    transform: rotate3d(0,0,1,270deg);
+}
+.lateral
+{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border: 2px solid black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 35%;
+}
+.back 
+{
+    background: red; 
+    transform: rotateX(0deg) translateZ(-75px);
+}
+.left
+{
+    background: yellow; 
+    transform: rotateY(90deg) translateZ(-75px);
+}
+.bottom
+{
+    background: lime; 
+    transform: rotateX(90deg) translateZ(-75px);
+}
+.front 
+{
+    background: cyan;
+    transform: rotateX(0deg) translateZ(75px);
+}
+.right
+{
+    background: blue;
+    transform: rotateY(90deg) translateZ(75px);
+}
+.top
+{
+    background: violet;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.botones 
+{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+  
+.boton 
+{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#abajo 
+{
+    top: 35px;
+}
+  
+#izquierda 
+{
+    top: 35px;
+    left: -35px;
+}
+  
+#derecha 
+{
+    top: 35px;
+    left: 35px;
+}
+  
